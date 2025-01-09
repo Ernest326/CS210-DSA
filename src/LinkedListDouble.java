@@ -59,7 +59,7 @@ public class LinkedListDouble {
         Link current = first; //, previous = first; --Once again we dont need to keep track of previous
 
         //Find the link
-        while(current.data != key) {
+        while(current.data != key && current!=null) {
             current = current.next;
         }
 

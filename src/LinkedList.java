@@ -30,7 +30,7 @@ public class LinkedList {
         Link current = first, previous = first;
 
         //Find the link + previous link
-        while(current.data != key) {
+        while(current.data != key && current!=null) {
             previous = current;
             current = current.next;
         }
